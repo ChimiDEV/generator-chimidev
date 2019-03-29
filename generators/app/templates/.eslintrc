@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.js", "*.integrationSpec.js"],
+      "rules": {
+        "no-new": "off"
+      }
+    }
+  ]
+}

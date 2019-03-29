@@ -1,0 +1,30 @@
+{
+  "name": "generator-chimidev",
+  "version": "0.0.1",
+  "description": "Generator for my most basic JS dev boilerplate",
+  "files": ["generators"],
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChimiDEV/generator-chimidev.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "js",
+    "babel",
+    "husky",
+    "eslint",
+    "prettier"
+  ],
+  "author": "ChimiDEV <chimidev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChimiDEV/generator-chimidev/issues"
+  },
+  "homepage": "https://github.com/ChimiDEV/generator-chimidev#readme",
+  "dependencies": {
+    "yeoman-generator": "^3.2.0"
+  }
+}

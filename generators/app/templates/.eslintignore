@@ -1,5 +1,7 @@
 dist/
 .idea/
+site/
+docs/
 
 # Dependency directories
 node_modules/

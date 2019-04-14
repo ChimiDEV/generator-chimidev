@@ -9,8 +9,6 @@ module.exports = class ChimiDEVGen extends Generator {
     this.hasESLintConfig = false;
     this.hasESLintIgnore = false;
     this.hasGitIgnore = false;
-    this.hasHuskyConfig = false;
-    this.hasLintstageConfig = false;
     this.hasPrettierConfig = false;
     this.hasPrettierIgnore = false;
     this.hasJestConfig = false;
@@ -21,8 +19,6 @@ module.exports = class ChimiDEVGen extends Generator {
       { key: 'hasESLintConfig', file: '.eslintrc' },
       { key: 'hasESLintIgnore', file: '.eslintignore' },
       { key: 'hasGitIgnore', file: '.gitignore' },
-      { key: 'hasHuskyConfig', file: '.huskyrc' },
-      { key: 'hasLintstageConfig', file: '.lintstagedrc' },
       { key: 'hasPrettierConfig', file: '.prettierrc' },
       { key: 'hasPrettierIgnore', file: '.prettierignore' },
       { key: 'hasJestConfig', file: 'jest.config.js' },
@@ -81,7 +77,7 @@ module.exports = class ChimiDEVGen extends Generator {
       if (file === 'package.json') return;
       if (this[key]) {
         this.log(
-          `\x1b[33m${file} already exists. Please check if it is correct.\x1b[0m`,
+          `\x1b[33m${file} already exists. Please check if it is correctly setup.\x1b[0m`,
         );
         return;
       }
@@ -89,7 +85,7 @@ module.exports = class ChimiDEVGen extends Generator {
       this.fs.copy(this.templatePath(file), this.destinationPath(file));
     });
 
-    if (!this.fs.exists(this.destinationPath('src/index.js'))) {
+    if (!this.fs.exists(this.destinationPath('src'))) {
       this.fs.copy(
         this.templatePath('index.js'),
         this.destinationPath('src/index.js'),
@@ -114,8 +110,6 @@ module.exports = class ChimiDEVGen extends Generator {
       'eslint-plugin-import@^2.0.0',
       'eslint-plugin-promise@^4.0.0',
       'eslint-plugin-node@^7.0.0',
-      'husky@^1.0.0',
-      'lint-staged@^8.0.0',
       'jest@^24.0.0',
       'prettier@^1.0.0',
     ];

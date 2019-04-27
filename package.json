@@ -1,13 +1,21 @@
 {
   "name": "@chimidev/generator-js",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Generator for my most basic JS dev boilerplate",
-  "files": ["generators"],
+  "files": [
+    "generators"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChimiDEV/generator-chimidev.git"
   },
-  "keywords": ["yeoman-generator", "js", "babel", "eslint", "prettier"],
+  "keywords": [
+    "yeoman-generator",
+    "js",
+    "babel",
+    "eslint",
+    "prettier"
+  ],
   "author": "ChimiDEV <chimidev@gmail.com>",
   "license": "MIT",
   "bugs": {

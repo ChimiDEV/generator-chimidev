@@ -8,7 +8,6 @@ module.exports = class ChimiDEVGen extends Generator {
     this.hasEditorConfig = false;
     this.hasESLintConfig = false;
     this.hasESLintIgnore = false;
-    this.hasGitIgnore = false;
     this.hasPrettierConfig = false;
     this.hasPrettierIgnore = false;
     this.hasJestConfig = false;
@@ -18,7 +17,6 @@ module.exports = class ChimiDEVGen extends Generator {
       { key: 'hasEditorConfig', file: '.editorconfig' },
       { key: 'hasESLintConfig', file: '.eslintrc' },
       { key: 'hasESLintIgnore', file: '.eslintignore' },
-      { key: 'hasGitIgnore', file: '.gitignore' },
       { key: 'hasPrettierConfig', file: '.prettierrc' },
       { key: 'hasPrettierIgnore', file: '.prettierignore' },
       { key: 'hasJestConfig', file: 'jest.config.js' },
@@ -77,8 +75,8 @@ module.exports = class ChimiDEVGen extends Generator {
       if (file === 'package.json') return;
       if (this[key]) {
         this.log(
-          `\x1b[33m${file} already exists. Please check if it is correctly setup.\x1b[0m`,
-        );
+          `\x1b[33m${file} already exists. Please check if it's setup correctly.\x1b[0m`,
+        );s
         return;
       }
       this.log(`Writing ${file} file...`);

@@ -35,7 +35,7 @@ module.exports = class CloudGen extends Generator {
       qa: 'npm run lint:fix && npm run format && npm run test',
     };
 
-    this.npmModules [
+    this.npmModules = [
       '@babel/cli@^7.0.0',
       '@babel/core@^7.0.0',
       '@babel/node@^7.0.0',
@@ -46,7 +46,7 @@ module.exports = class CloudGen extends Generator {
       'eslint-config-prettier@^6.0.0',
       'eslint-plugin-jest@^23.0.0',
       'eslint-plugin-json@^2.0.0',
-      'eslint-plugin-import@^4.0.0',
+      'eslint-plugin-import@^2.0.0',
       'eslint-plugin-promise@^4.0.0',
       'eslint-plugin-node@^11.0.0',
       'jest@^25.0.0',

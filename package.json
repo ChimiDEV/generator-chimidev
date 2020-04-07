@@ -1,5 +1,5 @@
 {
-  "name": "generator-chimidev",
+  "name": "@chimidev/generator-js",
   "version": "1.0.0",
   "description": "Generator for my most basic JS dev boilerplate",
   "files": [

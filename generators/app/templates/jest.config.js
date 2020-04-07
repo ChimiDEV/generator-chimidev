@@ -9,7 +9,6 @@ module.exports = {
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
-
   // The root directory that Jest should scan for tests and modules within
   rootDir: 'test',
 };

@@ -3,7 +3,8 @@
     [
       "@babel/env",
       {
-        "shippedProposals": true,
+        "useBuiltIns": "usage",
+        "corejs": 3,
         "targets": {
           "node": "12.14"
         },

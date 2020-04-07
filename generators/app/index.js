@@ -51,6 +51,7 @@ module.exports = class CloudGen extends Generator {
       'eslint-plugin-node@^11.0.0',
       'jest@^25.0.0',
       'prettier@^2.0.0',
+      'core-js@^3.0.0',
     ];
   }
 
@@ -108,8 +109,9 @@ module.exports = class CloudGen extends Generator {
           type: 'input',
           name: 'author',
           message: 'Author of this project',
-          default: `${this.user.git.name() ||
-            'Name'} <${this.user.git.email() || 'email@address.com'}>`,
+          default: `${this.user.git.name() || 'Name'} <${
+            this.user.git.email() || 'email@address.com'
+          }>`,
         },
       ]);
     }

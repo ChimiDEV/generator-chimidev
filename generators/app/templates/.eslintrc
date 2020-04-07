@@ -3,13 +3,14 @@
   "extends": [
     "airbnb-base",
     "prettier",
-    "plugin:json/recommended",
-    "plugin:promise/recommended",
-    "plugin:node/recommended"
+    "plugin:json/recommended"
   ],
-  "plugins": ["jest", "json", "promise"],
+  "plugins": [
+    "jest",
+    "json"
+  ],
   "env": {
     "jest/globals": true,
-    "ecmaVersion": 2020
+    "es2020": true
   }
 }

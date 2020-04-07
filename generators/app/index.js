@@ -47,8 +47,6 @@ module.exports = class CloudGen extends Generator {
       'eslint-plugin-jest@^23.0.0',
       'eslint-plugin-json@^2.0.0',
       'eslint-plugin-import@^2.0.0',
-      'eslint-plugin-promise@^4.0.0',
-      'eslint-plugin-node@^11.0.0',
       'jest@^25.0.0',
       'prettier@^2.0.0',
       'core-js@^3.0.0',

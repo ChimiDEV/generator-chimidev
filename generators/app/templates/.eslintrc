@@ -1,16 +1,15 @@
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb-base", "prettier"],
-  "plugins": ["jest"],
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:json/recommended",
+    "plugin:promise/recommended",
+    "plugin:node/recommended"
+  ],
+  "plugins": ["jest", "json", "promise"],
   "env": {
-    "jest/globals": true
-  },
-  "overrides": [
-    {
-      "files": ["*.spec.js", "*.integrationSpec.js"],
-      "rules": {
-        "no-new": "off"
-      }
-    }
-  ]
+    "jest/globals": true,
+    "ecmaVersion": 2020
+  }
 }

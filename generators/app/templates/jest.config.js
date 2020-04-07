@@ -9,8 +9,6 @@ module.exports = {
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
-  // Automatically clear mock calls and instances between every test
-  clearMocks: true,
 
   // The root directory that Jest should scan for tests and modules within
   rootDir: 'test',

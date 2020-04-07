@@ -5,15 +5,15 @@
       {
         "shippedProposals": true,
         "targets": {
-          "node": "8.10"
+          "node": "12.14"
         },
         "modules": "cjs"
       }
     ]
-  ],
- 
+  ]
+
   // Optional Plugins -> Proposals. Property does have to be used. Plugins have to be installed via npm.
   // "plugins": [
-    // ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
+  // ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
   // ]
- }
+}
